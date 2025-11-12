@@ -1,0 +1,364 @@
+/* ---------- Global Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ---------- Navbar ---------- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 60px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2a9d8f;
+}
+
+.list ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.list ul li a:hover {
+  color: #2a9d8f;
+}
+
+.cart img {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #e9f8f7, #ffffff);
+}
+
+.hero-section .span-1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero-section .span-2 {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #21867a;
+}
+
+/* ---------- Content Section ---------- */
+.contant-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.categorys {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.categorys img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.categorys img:hover {
+  transform: scale(1.1);
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.items div {
+  font-weight: 500;
+  color: #444;
+}
+
+/* ---------- Cards Section ---------- */
+.sec {
+  background-color: #fff;
+  padding: 60px 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  background-color: #f1fdfb;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-item img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.bton {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hand-card {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.descript {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2a9d8f;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ---------- Product Section ---------- */
+.products .items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.menu-item {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-items img {
+  width: 100px;
+  height: 100px;
+}
+
+.price-itmes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+/* ---------- Client Section ---------- */
+.clients-comments {
+  max-width: 800px;
+  margin: 30px auto;
+  font-style: italic;
+  line-height: 1.6;
+  color: #444;
+  text-align: center;
+}
+
+.wonners {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.wonner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wonner h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/* ---------- Footer ---------- */
+.footerr {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  text-align: left;
+}
+
+.footerr h3 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.unorder-list {
+  list-style: none;
+}
+
+.unorder-list a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.unorder-list a:hover {
+  color: #2a9d8f;
+}
+
+.ft-item {
+  max-width: 300px;
+}
+
+.ft-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.icon img {
+  border-radius: 50%;
+  background: #333;
+  padding: 5px;
+  transition: background 0.3s ease;
+}
+
+.icon img:hover {
+  background: #2a9d8f;
+}
+
+.message {
+  background-color: #111;
+  text-align: center;
+  color: #aaa;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards, .price-itmes, .wonners {
+    flex-direction: column;
+    align-items: center;
+  }
+}
